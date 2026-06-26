@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odara — Find the way forward</title>
+    <meta name="description" content="Odara is the AI-assisted career pathway platform for coaches. Help clients move from career uncertainty to a clear, evidence-based way forward.">
+    <meta property="og:title" content="Odara — Find the way forward">
+    <meta property="og:description" content="The AI-assisted career pathway platform for coaches. Turn client uncertainty into skills, direction, and next steps.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Odara — Find the way forward">
+    <meta name="twitter:description" content="The AI-assisted career pathway platform for coaches. Turn client uncertainty into skills, direction, and next steps.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        odara: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            200: '#bbf7d0',
+                            300: '#86efac',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                            900: '#14532d',
+                            950: '#052e16',
+                        },
+                        warm: {
+                            50: '#fefce8',
+                            100: '#fef9c3',
+                            200: '#fef08a',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        .gradient-text {
+            background: linear-gradient(135deg, #15803d 0%, #22c55e 50%, #16a34a 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: radial-gradient(ellipse at top, #f0fdf4 0%, #ffffff 60%);
+        }
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+        .fade-in-delay-1 { animation-delay: 0.2s; }
+        .fade-in-delay-2 { animation-delay: 0.4s; }
+        .fade-in-delay-3 { animation-delay: 0.6s; }
+        @keyframes fadeIn {
+            to { opacity: 1; transform: translateY(0); }
+            from { opacity: 0; transform: translateY(16px); }
+        }
+        .path-line {
+            background: linear-gradient(180deg, #22c55e 0%, #86efac 100%);
+            width: 2px;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="#15803d" stroke-width="2.5" fill="none"/>
+                    <path d="M10 20 C12 12, 20 12, 22 20" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                    <circle cx="16" cy="10" r="2" fill="#15803d"/>
+                </svg>
+                <span class="text-xl font-bold text-gray-900">Odara</span>
+            </div>
+            <a href="#waitlist" class="hidden sm:inline-flex items-center px-5 py-2.5 bg-odara-700 text-white text-sm font-medium rounded-full hover:bg-odara-800 transition-colors">
+                Join the Waitlist
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 lg:pt-40 lg:pb-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="fade-in inline-flex items-center px-4 py-1.5 bg-odara-50 border border-odara-200 rounded-full text-sm text-odara-700 font-medium mb-8">
+                    <span class="w-2 h-2 bg-odara-500 rounded-full mr-2 animate-pulse"></span>
+                    Coming Soon
+                </div>
+                <h1 class="fade-in fade-in-delay-1 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-6">
+                    The AI-assisted career pathway platform
+                    <span class="gradient-text"> for coaches</span>
+                </h1>
+                <p class="fade-in fade-in-delay-2 text-lg sm:text-xl text-gray-600 leading-relaxed mb-10 max-w-2xl mx-auto">
+                    Help clients move from career uncertainty to a clear, evidence-based way forward. Odara gives coaches the structure, intelligence, and tools to deliver premium career pathway services.
+                </p>
+                <div class="fade-in fade-in-delay-3 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#waitlist" class="inline-flex items-center justify-center px-8 py-4 bg-odara-700 text-white font-semibold rounded-full hover:bg-odara-800 transition-colors shadow-lg shadow-odara-700/20">
+                        Join the Waitlist
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                    <a href="#how-it-works" class="inline-flex items-center justify-center px-8 py-4 bg-white text-gray-700 font-semibold rounded-full border border-gray-200 hover:border-gray-300 hover:bg-gray-50 transition-colors">
+                        See How It Works
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tagline -->
+    <section class="py-16 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-2xl sm:text-3xl font-semibold text-gray-800 leading-snug">
+                Odara helps coaches turn client uncertainty into
+                <span class="text-odara-700">skills</span>,
+                <span class="text-odara-700">direction</span>, and
+                <span class="text-odara-700">next steps</span>.
+            </p>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 lg:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">How Odara Works</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">A structured, AI-assisted workflow that strengthens every coaching engagement.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+                <!-- Step 1 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-odara-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Upload & Discover</h3>
+                    <p class="text-gray-600 leading-relaxed">Clients upload CVs, portfolios, work samples, and artefacts. AI identifies skills, estimates levels, and shows the evidence behind each assessment.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-odara-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Explore & Plan</h3>
+                    <p class="text-gray-600 leading-relaxed">AI-guided conversations explore career directions. Odara maps skills to roles, identifies gaps, and suggests realistic transition paths — not just dream destinations.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="card-hover bg-white border border-gray-100 rounded-2xl p-8 shadow-sm">
+                    <div class="w-12 h-12 bg-odara-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Develop & Progress</h3>
+                    <p class="text-gray-600 leading-relaxed">Personalised development paths go beyond courses. Track progress, upload new evidence, gather feedback, and see readiness estimates for target roles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Detail -->
+    <section class="py-20 lg:py-28 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Built for How Coaches Work</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Odara doesn't replace the coach. It strengthens the coaching relationship with evidence, structure, and AI-powered insight.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F50D;</div>
+                    <h4 class="font-semibold mb-2">Evidence-Based Skills</h4>
+                    <p class="text-sm text-gray-600">Distinguish between self-reported, AI-inferred, evidence-supported, and feedback-validated skills.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F4AC;</div>
+                    <h4 class="font-semibold mb-2">Structured Feedback</h4>
+                    <p class="text-sm text-gray-600">Clients can request feedback from managers, colleagues, mentors, and peers to build a richer picture.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F5FA;&#xFE0F;</div>
+                    <h4 class="font-semibold mb-2">Realistic Pathways</h4>
+                    <p class="text-sm text-gray-600">Not just dream roles — realistic transition steps. From where you are to where you want to be.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F4DA;</div>
+                    <h4 class="font-semibold mb-2">Beyond Courses</h4>
+                    <p class="text-sm text-gray-600">Development includes projects, volunteering, shadowing, mentoring, freelance work, and real-world experiences.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F4C8;</div>
+                    <h4 class="font-semibold mb-2">Progress Tracking</h4>
+                    <p class="text-sm text-gray-600">Track completed actions, reassess skills over time, and estimate readiness for target roles.</p>
+                </div>
+                <div class="bg-white rounded-xl p-6 border border-gray-100">
+                    <div class="text-2xl mb-3">&#x1F91D;</div>
+                    <h4 class="font-semibold mb-2">Between Sessions</h4>
+                    <p class="text-sm text-gray-600">Support clients between coaching sessions with guided self-exploration and structured activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="py-20 lg:py-28">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-6">Who Odara Is For</h2>
+                    <p class="text-lg text-gray-600 mb-8">Odara is designed for professionals who guide others through career transitions and growth.</p>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-odara-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-3.5 h-3.5 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <span class="text-gray-700">Career & leadership coaches</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-odara-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-3.5 h-3.5 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <span class="text-gray-700">Return-to-work & employability coaches</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-odara-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-3.5 h-3.5 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <span class="text-gray-700">Executive coaches & outplacement consultants</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-odara-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-3.5 h-3.5 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <span class="text-gray-700">University career services</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <div class="w-6 h-6 rounded-full bg-odara-100 flex items-center justify-center flex-shrink-0">
+                                <svg class="w-3.5 h-3.5 text-odara-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/></svg>
+                            </div>
+                            <span class="text-gray-700">Workforce development & internal mobility teams</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-br from-odara-50 to-white border border-odara-100 rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Helping clients who...</h3>
+                    <div class="space-y-3 text-gray-600">
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Are changing careers</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Are returning after long leave</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Feel stuck and want clarity</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Are preparing for promotion</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Have been made redundant</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Want to explore a completely new field</p>
+                        <p class="flex items-start gap-2"><span class="text-odara-500 mt-1">&#x2192;</span> Need to rebuild professional confidence</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Vision -->
+    <section class="py-20 lg:py-28 bg-odara-900 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-6">The Vision</h2>
+            <p class="text-xl text-odara-100 leading-relaxed mb-8">
+                Odara's long-term vision is to become the platform coaches use to help clients understand, evidence, and grow their skills throughout their working lives.
+            </p>
+            <div class="flex flex-wrap justify-center gap-3 text-sm">
+                <span class="px-4 py-2 bg-odara-800 rounded-full text-odara-200">Skills Passport</span>
+                <span class="px-4 py-2 bg-odara-800 rounded-full text-odara-200">Coaching Workspace</span>
+                <span class="px-4 py-2 bg-odara-800 rounded-full text-odara-200">Career Pathway Planner</span>
+                <span class="px-4 py-2 bg-odara-800 rounded-full text-odara-200">Development Tracker</span>
+                <span class="px-4 py-2 bg-odara-800 rounded-full text-odara-200">Confidence Builder</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Waitlist / CTA -->
+    <section id="waitlist" class="py-20 lg:py-28">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Be First to Know</h2>
+            <p class="text-lg text-gray-600 mb-10">Odara is currently in development. Join the waitlist to get early access and help shape the platform.</p>
+
+            <form id="waitlist-form" class="max-w-md mx-auto" onsubmit="handleSubmit(event)">
+                <div class="flex flex-col sm:flex-row gap-3">
+                    <input
+                        type="email"
+                        id="email-input"
+                        placeholder="your@email.com"
+                        required
+                        class="flex-1 px-5 py-3.5 border border-gray-200 rounded-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-odara-500 focus:border-transparent"
+                    >
+                    <button
+                        type="submit"
+                        class="px-8 py-3.5 bg-odara-700 text-white font-semibold rounded-full hover:bg-odara-800 transition-colors shadow-lg shadow-odara-700/20 whitespace-nowrap"
+                    >
+                        Join Waitlist
+                    </button>
+                </div>
+                <p id="form-message" class="mt-4 text-sm text-gray-500 hidden"></p>
+            </form>
+
+            <p class="mt-6 text-sm text-gray-400">No spam. We'll only email you when Odara is ready.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-100 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-2">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="#15803d" stroke-width="2.5" fill="none"/>
+                        <path d="M10 20 C12 12, 20 12, 22 20" stroke="#22c55e" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                        <circle cx="16" cy="10" r="2" fill="#15803d"/>
+                    </svg>
+                    <span class="font-bold text-gray-900">Odara</span>
+                </div>
+                <p class="text-sm text-gray-500">Find the way forward.</p>
+                <p class="text-sm text-gray-400">&copy; 2025 Odara. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function handleSubmit(e) {
+            e.preventDefault();
+            const email = document.getElementById('email-input').value;
+            const message = document.getElementById('form-message');
+
+            // For now, show a confirmation message
+            // Replace this with your actual form handler (e.g., Formspree, Mailchimp, Supabase)
+            message.textContent = "Thanks! We'll be in touch when Odara is ready.";
+            message.classList.remove('hidden', 'text-red-500');
+            message.classList.add('text-odara-700');
+            document.getElementById('email-input').value = '';
+
+            // Log to console for now - replace with actual API call
+            console.log('Waitlist signup:', email);
+        }
+    </script>
+</body>
+</html>
